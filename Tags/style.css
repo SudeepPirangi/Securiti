@@ -1,0 +1,542 @@
+/* Add your styles here */
+
+.plunker-tags-input {
+  display: block;
+  height: 37px;
+  padding: 8px 12px;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #6f6f6f;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 0;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding: 4px 8px;
+}
+
+.plunker-tags-input:focus {
+  border-color: #66afe9;
+  outline: 0;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+.plunker-tags-input::-moz-placeholder {
+  color: #999;
+  opacity: 1;
+}
+
+.plunker-tags-input:-ms-input-placeholder {
+  color: #999;
+}
+
+.plunker-tags-input::-webkit-input-placeholder {
+  color: #999;
+}
+
+.plunker-tags-input::-ms-expand {
+  background-color: transparent;
+  border: 0;
+}
+
+.plunker-tags-input[disabled],
+.plunker-tags-input[readonly],
+fieldset[disabled] .plunker-tags-input {
+  background-color: #eee;
+  opacity: 1;
+}
+
+.plunker-tags-input[disabled],
+fieldset[disabled] .plunker-tags-input {
+  cursor: not-allowed;
+}
+
+textarea.plunker-tags-input {
+  height: auto;
+}
+
+.plunker-tags-input > .plunker-tag-item {
+  margin: 4px;
+}
+
+.plunker-tags-input > .plunker-tag-input {
+  flex-grow: 1;
+  margin: 4px;
+}
+
+.plunker-tags-input.focus {
+  border-color: #66afe9;
+  outline: 0;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+.plunker-tags-input.ng-invalid {
+  border-color: #a94442;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+.plunker-tags-input.ng-invalid.focus {
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ce8483;
+}
+
+.plunker-tag-item {
+  display: inline;
+  padding: 0.2em 0.6em 0.3em;
+  font-size: 75%;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.25em;
+  background-color: #008cba;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 2px 2px 2px 8px;
+}
+
+a.plunker-tag-item:focus,
+a.plunker-tag-item:hover {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.plunker-tag-item:empty {
+  display: none;
+}
+
+.btn .plunker-tag-item {
+  position: relative;
+  top: -1px;
+}
+
+.plunker-tag-item[href]:focus,
+.plunker-tag-item[href]:hover {
+  background-color: #006687;
+}
+
+.plunker-tag-item:focus {
+  border-width: 1px;
+  border-color: #66afe9;
+  outline: 0;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+.plunker-tag-remove {
+  float: right;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+  text-shadow: 0 1px 0 #fff;
+  filter: alpha(opacity=20);
+  opacity: 0.2;
+  font-size: 120%;
+  margin: 0 4px;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  opacity: 0.8;
+}
+
+.plunker-tag-remove:focus,
+.plunker-tag-remove:hover {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  filter: alpha(opacity=50);
+  opacity: 0.5;
+}
+
+button.plunker-tag-remove {
+  padding: 0;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.plunker-tag-input {
+  display: block;
+  width: 100%;
+  height: 37px;
+  padding: 8px 12px;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #6f6f6f;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 0;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  border: none;
+  outline: 0;
+  margin: 0;
+  padding: 1px 0;
+  box-shadow: none;
+  background: transparent;
+  height: auto;
+  width: auto;
+  line-height: auto;
+  min-height: auto;
+}
+
+.plunker-tag-input:focus {
+  border-color: #66afe9;
+  outline: 0;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+.plunker-tag-input::-moz-placeholder {
+  color: #999;
+  opacity: 1;
+}
+
+.plunker-tag-input:-ms-input-placeholder {
+  color: #999;
+}
+
+.plunker-tag-input::-webkit-input-placeholder {
+  color: #999;
+}
+
+.plunker-tag-input::-ms-expand {
+  background-color: transparent;
+  border: 0;
+}
+
+.plunker-tag-input[disabled],
+.plunker-tag-input[readonly],
+fieldset[disabled] .plunker-tag-input {
+  background-color: #eee;
+  opacity: 1;
+}
+
+.plunker-tag-input[disabled],
+fieldset[disabled] .plunker-tag-input {
+  cursor: not-allowed;
+}
+
+textarea.plunker-tag-input {
+  height: auto;
+}
+
+.plunker-tag-input:active,
+.plunker-tag-input:focus {
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+
+.plunker-plunk-tags {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: -0.5em;
+}
+
+.plunker-plunk-tags > .plunker-plunk-tag,
+.plunker-plunk-tags > .plunker-tags-tag {
+  flex: 0 0 auto;
+  margin: 0 0.5em 0.5em 0;
+}
+
+.plunker-plunk-tags > .plunker-plunk-tag:last-child,
+.plunker-plunk-tags > .plunker-tags-tag:last-child {
+  margin-right: 0;
+}
+
+.plunker-plunk-tags > .plunker-plunk-tag > a,
+.plunker-plunk-tags > .plunker-plunk-tag > span,
+.plunker-plunk-tags > .plunker-tags-tag > a,
+.plunker-plunk-tags > .plunker-tags-tag > span {
+  display: inline;
+  padding: 0.2em 0.6em 0.3em;
+  font-size: 75%;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.25em;
+  background-color: #008cba;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+a.plunker-plunk-tags > .plunker-plunk-tag > a:focus,
+a.plunker-plunk-tags > .plunker-plunk-tag > a:hover,
+a.plunker-plunk-tags > .plunker-plunk-tag > span:focus,
+a.plunker-plunk-tags > .plunker-plunk-tag > span:hover,
+a.plunker-plunk-tags > .plunker-tags-tag > a:focus,
+a.plunker-plunk-tags > .plunker-tags-tag > a:hover,
+a.plunker-plunk-tags > .plunker-tags-tag > span:focus,
+a.plunker-plunk-tags > .plunker-tags-tag > span:hover {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.plunker-plunk-tags > .plunker-plunk-tag > a:empty,
+.plunker-plunk-tags > .plunker-plunk-tag > span:empty,
+.plunker-plunk-tags > .plunker-tags-tag > a:empty,
+.plunker-plunk-tags > .plunker-tags-tag > span:empty {
+  display: none;
+}
+
+.btn .plunker-plunk-tags > .plunker-plunk-tag > a,
+.btn .plunker-plunk-tags > .plunker-plunk-tag > span,
+.btn .plunker-plunk-tags > .plunker-tags-tag > a,
+.btn .plunker-plunk-tags > .plunker-tags-tag > span {
+  position: relative;
+  top: -1px;
+}
+
+.plunker-plunk-tags > .plunker-plunk-tag > a[href]:focus,
+.plunker-plunk-tags > .plunker-plunk-tag > a[href]:hover,
+.plunker-plunk-tags > .plunker-plunk-tag > span[href]:focus,
+.plunker-plunk-tags > .plunker-plunk-tag > span[href]:hover,
+.plunker-plunk-tags > .plunker-tags-tag > a[href]:focus,
+.plunker-plunk-tags > .plunker-tags-tag > a[href]:hover,
+.plunker-plunk-tags > .plunker-tags-tag > span[href]:focus,
+.plunker-plunk-tags > .plunker-tags-tag > span[href]:hover {
+  background-color: #006687;
+}
+
+.plunker-plunk-tags > .plunker-plunk-tag > a:before,
+.plunker-plunk-tags > .plunker-plunk-tag > span:before,
+.plunker-plunk-tags > .plunker-tags-tag > a:before,
+.plunker-plunk-tags > .plunker-tags-tag > span:before {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\F292";
+  margin: 0 2px 0 -2px;
+}
+
+.plunker-plunk-tags > .plunker-plunk-tag > a:before.fa-pull-left,
+.plunker-plunk-tags > .plunker-plunk-tag > span:before.fa-pull-left,
+.plunker-plunk-tags > .plunker-tags-tag > a:before.fa-pull-left,
+.plunker-plunk-tags > .plunker-tags-tag > span:before.fa-pull-left {
+  margin-right: 0.3em;
+}
+
+.plunker-plunk-tags > .plunker-plunk-tag > a:before.fa-pull-right,
+.plunker-plunk-tags > .plunker-plunk-tag > span:before.fa-pull-right,
+.plunker-plunk-tags > .plunker-tags-tag > a:before.fa-pull-right,
+.plunker-plunk-tags > .plunker-tags-tag > span:before.fa-pull-right {
+  margin-left: 0.3em;
+}
+
+.plunker-plunk-tags > .plunker-plunk-tag > a:before.pull-left,
+.plunker-plunk-tags > .plunker-plunk-tag > span:before.pull-left,
+.plunker-plunk-tags > .plunker-tags-tag > a:before.pull-left,
+.plunker-plunk-tags > .plunker-tags-tag > span:before.pull-left {
+  margin-right: 0.3em;
+}
+
+.plunker-plunk-tags > .plunker-plunk-tag > a:before.pull-right,
+.plunker-plunk-tags > .plunker-plunk-tag > span:before.pull-right,
+.plunker-plunk-tags > .plunker-tags-tag > a:before.pull-right,
+.plunker-plunk-tags > .plunker-tags-tag > span:before.pull-right {
+  margin-left: 0.3em;
+}
+
+.plunker-plunk-tags > .plunker-plunk-package,
+.plunker-plunk-tags > .plunker-tags-package {
+  flex: 0 0 auto;
+  margin: 0 0.5em 0.5em 0;
+}
+
+.plunker-plunk-tags > .plunker-plunk-package:last-child,
+.plunker-plunk-tags > .plunker-tags-package:last-child {
+  margin-right: 0;
+}
+
+.plunker-plunk-tags > .plunker-plunk-package > a,
+.plunker-plunk-tags > .plunker-plunk-package > span,
+.plunker-plunk-tags > .plunker-tags-package > a,
+.plunker-plunk-tags > .plunker-tags-package > span {
+  display: inline;
+  padding: 0.2em 0.6em 0.3em;
+  font-size: 75%;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.25em;
+  background-color: #43ac6a;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+a.plunker-plunk-tags > .plunker-plunk-package > a:focus,
+a.plunker-plunk-tags > .plunker-plunk-package > a:hover,
+a.plunker-plunk-tags > .plunker-plunk-package > span:focus,
+a.plunker-plunk-tags > .plunker-plunk-package > span:hover,
+a.plunker-plunk-tags > .plunker-tags-package > a:focus,
+a.plunker-plunk-tags > .plunker-tags-package > a:hover,
+a.plunker-plunk-tags > .plunker-tags-package > span:focus,
+a.plunker-plunk-tags > .plunker-tags-package > span:hover {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.plunker-plunk-tags > .plunker-plunk-package > a:empty,
+.plunker-plunk-tags > .plunker-plunk-package > span:empty,
+.plunker-plunk-tags > .plunker-tags-package > a:empty,
+.plunker-plunk-tags > .plunker-tags-package > span:empty {
+  display: none;
+}
+
+.btn .plunker-plunk-tags > .plunker-plunk-package > a,
+.btn .plunker-plunk-tags > .plunker-plunk-package > span,
+.btn .plunker-plunk-tags > .plunker-tags-package > a,
+.btn .plunker-plunk-tags > .plunker-tags-package > span {
+  position: relative;
+  top: -1px;
+}
+
+.plunker-plunk-tags > .plunker-plunk-package > a[href]:focus,
+.plunker-plunk-tags > .plunker-plunk-package > a[href]:hover,
+.plunker-plunk-tags > .plunker-plunk-package > span[href]:focus,
+.plunker-plunk-tags > .plunker-plunk-package > span[href]:hover,
+.plunker-plunk-tags > .plunker-tags-package > a[href]:focus,
+.plunker-plunk-tags > .plunker-tags-package > a[href]:hover,
+.plunker-plunk-tags > .plunker-tags-package > span[href]:focus,
+.plunker-plunk-tags > .plunker-tags-package > span[href]:hover {
+  background-color: #358753;
+}
+
+.plunker-plunk-tags > .plunker-plunk-package > a:before,
+.plunker-plunk-tags > .plunker-plunk-package > span:before,
+.plunker-plunk-tags > .plunker-tags-package > a:before,
+.plunker-plunk-tags > .plunker-tags-package > span:before {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\F121";
+  margin: 0 2px 0 -2px;
+}
+
+.plunker-plunk-tags > .plunker-plunk-package > a:before.fa-pull-left,
+.plunker-plunk-tags > .plunker-plunk-package > span:before.fa-pull-left,
+.plunker-plunk-tags > .plunker-tags-package > a:before.fa-pull-left,
+.plunker-plunk-tags > .plunker-tags-package > span:before.fa-pull-left {
+  margin-right: 0.3em;
+}
+
+.plunker-plunk-tags > .plunker-plunk-package > a:before.fa-pull-right,
+.plunker-plunk-tags > .plunker-plunk-package > span:before.fa-pull-right,
+.plunker-plunk-tags > .plunker-tags-package > a:before.fa-pull-right,
+.plunker-plunk-tags > .plunker-tags-package > span:before.fa-pull-right {
+  margin-left: 0.3em;
+}
+
+.plunker-plunk-tags > .plunker-plunk-package > a:before.pull-left,
+.plunker-plunk-tags > .plunker-plunk-package > span:before.pull-left,
+.plunker-plunk-tags > .plunker-tags-package > a:before.pull-left,
+.plunker-plunk-tags > .plunker-tags-package > span:before.pull-left {
+  margin-right: 0.3em;
+}
+
+.plunker-plunk-tags > .plunker-plunk-package > a:before.pull-right,
+.plunker-plunk-tags > .plunker-plunk-package > span:before.pull-right,
+.plunker-plunk-tags > .plunker-tags-package > a:before.pull-right,
+.plunker-plunk-tags > .plunker-tags-package > span:before.pull-right {
+  margin-left: 0.3em;
+}
+
+.plunker-plunk-tags > .plunker-plunk-package > a > .plunker-tag-remove,
+.plunker-plunk-tags > .plunker-plunk-package > span > .plunker-tag-remove,
+.plunker-plunk-tags > .plunker-plunk-tag > a > .plunker-tag-remove,
+.plunker-plunk-tags > .plunker-plunk-tag > span > .plunker-tag-remove,
+.plunker-plunk-tags > .plunker-tags-package > a > .plunker-tag-remove,
+.plunker-plunk-tags > .plunker-tags-package > span > .plunker-tag-remove,
+.plunker-plunk-tags > .plunker-tags-tag > a > .plunker-tag-remove,
+.plunker-plunk-tags > .plunker-tags-tag > span > .plunker-tag-remove {
+  float: right;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+  text-shadow: 0 1px 0 #fff;
+  filter: alpha(opacity=20);
+  opacity: 0.2;
+  font-size: 120%;
+  margin: -2px -2px -2px 0;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  opacity: 1;
+}
+
+.plunker-plunk-tags > .plunker-plunk-package > a > .plunker-tag-remove:focus,
+.plunker-plunk-tags > .plunker-plunk-package > a > .plunker-tag-remove:hover,
+.plunker-plunk-tags > .plunker-plunk-package > span > .plunker-tag-remove:focus,
+.plunker-plunk-tags > .plunker-plunk-package > span > .plunker-tag-remove:hover,
+.plunker-plunk-tags > .plunker-plunk-tag > a > .plunker-tag-remove:focus,
+.plunker-plunk-tags > .plunker-plunk-tag > a > .plunker-tag-remove:hover,
+.plunker-plunk-tags > .plunker-plunk-tag > span > .plunker-tag-remove:focus,
+.plunker-plunk-tags > .plunker-plunk-tag > span > .plunker-tag-remove:hover,
+.plunker-plunk-tags > .plunker-tags-package > a > .plunker-tag-remove:focus,
+.plunker-plunk-tags > .plunker-tags-package > a > .plunker-tag-remove:hover,
+.plunker-plunk-tags > .plunker-tags-package > span > .plunker-tag-remove:focus,
+.plunker-plunk-tags > .plunker-tags-package > span > .plunker-tag-remove:hover,
+.plunker-plunk-tags > .plunker-tags-tag > a > .plunker-tag-remove:focus,
+.plunker-plunk-tags > .plunker-tags-tag > a > .plunker-tag-remove:hover,
+.plunker-plunk-tags > .plunker-tags-tag > span > .plunker-tag-remove:focus,
+.plunker-plunk-tags > .plunker-tags-tag > span > .plunker-tag-remove:hover {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  filter: alpha(opacity=50);
+  opacity: 0.5;
+}
+
+button.plunker-plunk-tags > .plunker-plunk-package > a > .plunker-tag-remove,
+button.plunker-plunk-tags > .plunker-plunk-package > span > .plunker-tag-remove,
+button.plunker-plunk-tags > .plunker-plunk-tag > a > .plunker-tag-remove,
+button.plunker-plunk-tags > .plunker-plunk-tag > span > .plunker-tag-remove,
+button.plunker-plunk-tags > .plunker-tags-package > a > .plunker-tag-remove,
+button.plunker-plunk-tags > .plunker-tags-package > span > .plunker-tag-remove,
+button.plunker-plunk-tags > .plunker-tags-tag > a > .plunker-tag-remove,
+button.plunker-plunk-tags > .plunker-tags-tag > span > .plunker-tag-remove {
+  padding: 0;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
